@@ -1,0 +1,6 @@
+# y, xstart, xend, rotation, color, label, va,  bed
+ .6,     .1,   .8,        0,      ,    cM, top, r5_3.bed
+ .4,     .1,   .8,        0,      ,    Mb, top, r0301.bed
+# edges
+e, 0, 1, r5_3.r0301.anchors.simple
+

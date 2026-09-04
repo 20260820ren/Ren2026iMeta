@@ -1,0 +1,100 @@
+[10:46:40] DEBUG    lastdb r1_8 r1_8.cds                            base.py:1184
+[10:46:40] DEBUG    lastdb r0301 r0301.cds                          base.py:1184
+[10:46:51] DEBUG    lastal -u 0 -P 30 -i3G -f BlastTab r0301        base.py:1184
+                    r5_3.cds >./r5_3.r0301.last                                 
+[10:46:55] DEBUG    lastal -u 0 -P 30 -i3G -f BlastTab r1_8         base.py:1184
+                    r0301.cds >./r0301.r1_8.last                                
+[10:46:56] DEBUG    Assuming --qbed=r5_3.bed --sbed=r0301.bed     synteny.py:499
+           DEBUG    Load file `r5_3.bed`                              base.py:33
+           DEBUG    Load file `r0301.bed`                             base.py:33
+           DEBUG    Load BLAST file `r5_3.r0301.last` (total   blastfilter.py:46
+                    156988 lines)                                               
+           DEBUG    Load file `r5_3.r0301.last`                       base.py:33
+[10:46:57] DEBUG    running the cscore filter (cscore>=0.70)  blastfilter.py:108
+                    ..                                                          
+           DEBUG    after filter (63117->6345) ..             blastfilter.py:110
+           DEBUG    running the local dups filter             blastfilter.py:115
+                    (tandem_Nmax=10) ..                                         
+           DEBUG    after filter (6345->6152) ..              blastfilter.py:155
+           DEBUG    Assuming --qbed=r5_3.bed --sbed=r0301.bed     synteny.py:499
+           DEBUG    Load file `r5_3.bed`                              base.py:33
+[10:46:58] DEBUG    Load file `r0301.bed`                             base.py:33
+           DEBUG    Load file `r5_3.r0301.last.filtered`              base.py:33
+           DEBUG    A total of 6152 BLAST imported from           synteny.py:386
+                    `r5_3.r0301.last.filtered`.                                 
+           DEBUG    Chaining distance = 20                       synteny.py:1931
+           DEBUG    Load file `r5_3.r0301.anchors`                    base.py:33
+A total of 5061 (NR:4994) anchors found in 48 clusters.
+Stats: Min=4 Max=586 N=48 Mean=105.44 SD=149.68 Median=17.5 Sum=5061
+NR stats: Min=4 Max=570 N=48 Mean=104.04 SD=148.20 Median=15.0 Sum=4994
+           DEBUG    Load file `r5_3.bed`                              base.py:33
+           DEBUG    Load file `r0301.bed`                             base.py:33
+           DEBUG    Load file `r5_3.r0301.last`                       base.py:33
+[10:46:59] DEBUG    A total of 63125 BLAST imported from          synteny.py:386
+                    `r5_3.r0301.last`.                                          
+           DEBUG    Load file `r5_3.r0301.anchors`                    base.py:33
+           DEBUG    A total of 5061 anchors imported.             synteny.py:412
+           DEBUG    7434 new pairs found (dist=10).              synteny.py:2009
+           DEBUG    Removed 0 existing anchors.                    synteny.py:93
+           DEBUG    Corrected scores for 53 anchors.               synteny.py:94
+           DEBUG    Anchors written to                             synteny.py:95
+                    `r5_3.r0301.lifted.anchors`.                                
+           DEBUG    Load file `r5_3.r0301.lifted.anchors`             base.py:33
+A total of 12495 (NR:9472) anchors found in 48 clusters.
+Stats: Min=4 Max=1304 N=48 Mean=260.31 SD=338.22 Median=54.5 Sum=12495
+NR stats: Min=4 Max=1047 N=48 Mean=197.33 SD=273.98 Median=31.5 Sum=9472
+           DEBUG    Assuming --qbed=r5_3.bed --sbed=r0301.bed     synteny.py:499
+           DEBUG    Load file `r5_3.bed`                              base.py:33
+           DEBUG    Load file `r0301.bed`                             base.py:33
+[10:46:59] DEBUG    Assuming --qbed=r0301.bed --sbed=r1_8.bed     synteny.py:499
+           DEBUG    Load file `r0301.bed`                             base.py:33
+[10:47:00] DEBUG    Load file `r1_8.bed`                              base.py:33
+[10:47:00] DEBUG    xsize=10697 ysize=11515                       dotplot.py:338
+           DEBUG    Load BLAST file `r0301.r1_8.last` (total   blastfilter.py:46
+                    171070 lines)                                               
+           DEBUG    Load file `r0301.r1_8.last`                       base.py:33
+[10:47:01 AM] DEBUG    Dot plot title: Inter-genomic comparison:  dotplot.py:381
+                       r5\_3 vs r0301 (5,061 gene pairs)                        
+[10:47:01] DEBUG    running the cscore filter (cscore>=0.70)  blastfilter.py:108
+                    ..                                                          
+           DEBUG    after filter (71828->7500) ..             blastfilter.py:110
+           DEBUG    running the local dups filter             blastfilter.py:115
+                    (tandem_Nmax=10) ..                                         
+           DEBUG    after filter (7500->7286) ..              blastfilter.py:155
+           DEBUG    Assuming --qbed=r0301.bed --sbed=r1_8.bed     synteny.py:499
+           DEBUG    Load file `r0301.bed`                             base.py:33
+           DEBUG    Load file `r1_8.bed`                              base.py:33
+           DEBUG    Load file `r0301.r1_8.last.filtered`              base.py:33
+              DEBUG    Figure saved to `r5_3.r0301.pdf` (810px x     base.py:293
+                       810px)                                                   
+           DEBUG    A total of 7286 BLAST imported from           synteny.py:386
+                    `r0301.r1_8.last.filtered`.                                 
+           DEBUG    Chaining distance = 20                       synteny.py:1931
+           DEBUG    Load file `r0301.r1_8.anchors`                    base.py:33
+A total of 5906 (NR:5807) anchors found in 61 clusters.
+Stats: Min=4 Max=588 N=61 Mean=96.82 SD=144.69 Median=17.0 Sum=5906
+NR stats: Min=4 Max=573 N=61 Mean=95.20 SD=143.22 Median=16.0 Sum=5807
+[10:47:02] DEBUG    Load file `r0301.bed`                             base.py:33
+           DEBUG    Load file `r1_8.bed`                              base.py:33
+           DEBUG    Load file `r0301.r1_8.last`                       base.py:33
+           DEBUG    A total of 71837 BLAST imported from          synteny.py:386
+                    `r0301.r1_8.last`.                                          
+[10:47:03] DEBUG    Load file `r0301.r1_8.anchors`                    base.py:33
+           DEBUG    A total of 5906 anchors imported.             synteny.py:412
+           DEBUG    8343 new pairs found (dist=10).              synteny.py:2009
+           DEBUG    Removed 0 existing anchors.                    synteny.py:93
+           DEBUG    Corrected scores for 67 anchors.               synteny.py:94
+           DEBUG    Anchors written to                             synteny.py:95
+                    `r0301.r1_8.lifted.anchors`.                                
+           DEBUG    Load file `r0301.r1_8.lifted.anchors`             base.py:33
+A total of 14249 (NR:10746) anchors found in 61 clusters.
+Stats: Min=6 Max=1291 N=61 Mean=233.59 SD=325.42 Median=58.0 Sum=14249
+NR stats: Min=6 Max=1072 N=61 Mean=176.16 SD=261.64 Median=32.0 Sum=10746
+           DEBUG    Assuming --qbed=r0301.bed --sbed=r1_8.bed     synteny.py:499
+           DEBUG    Load file `r0301.bed`                             base.py:33
+           DEBUG    Load file `r1_8.bed`                              base.py:33
+           DEBUG    xsize=11515 ysize=12296                       dotplot.py:338
+[10:47:04 AM] DEBUG    Dot plot title: Inter-genomic comparison:  dotplot.py:381
+                       r0301 vs r1\_8 (5,906 gene pairs)                        
+[10:47:05 AM] DEBUG    Figure saved to `r0301.r1_8.pdf` (810px x     base.py:293
+                       810px)                                                   
